@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+	<head>
+		<meta charset="UTF-8" />
+		<title>A Little Quiz</title>
+		<meta name="description" content="JS screener" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="shortcut icon" sizes="96x96" href="https://tthq.me/tTIkon.png" />
+		<style media="all">
+html, body {
+	background-color: hsl(200, 30%, 60%);
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+div {
+	margin: 10px auto;
+	padding: 20px;
+	max-width: 600px;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	text-align: center;
+}
+button {
+	padding: 0 10px;
+	font-size: 36px;
+	cursor: pointer;
+}
+p {margin: 2px 0;}
+span {font-weight: bold;}
+#question {font-size: 36px;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>A Little Quiz</h1>
+		</header>
+		<main>
+			<div id="question">
+				How many feet are in a mile?				
+			</div>
+			<div id="choices">
+				<p>Choose the correct answer:</p>
+				<p><button type="button" value="2,580">2,580</button></p>				
+				<p><button type="button" value="5,280">5,280</button></p>				
+				<p><button type="button" value="5,820">5,820</button></p>				
+				<p><button type="button" value="8,250">8,250</button></p>				
+			</div>
+			<div id="waiting">
+				<p>Hang on, we are checking your answer...</p>								
+			</div>
+			<div id="c_response">
+				<p>Yes! Your answer &#x201C;<span>00000</span>&#x201D; was correct.</p>
+				<p><button type="button" value="OK">OK</button></p>								
+			</div>
+			<div id="x_response">
+				<p>Sorry, but your answer &#x201C;<span>00000</span>&#x201D; was incorrect.</p>
+				<p>The answer &#x201C;<span>00000</span>&#x201D; would have been correct.</p>
+				<p><button type="button" value="OK">OK</button></p>								
+			</div>
+			<div id="err_response">
+				<p>Oops, the server returned the following error:</p>
+				<p>&#x201C;<span>error message</span>&#x201D;</p>
+				<p>Please try again.</p>
+				<p><button type="button" value="OK">OK</button></p>								
+			</div>
+		</main>
+		<script src="js_screener.js"></script>
+	</body>
+</html>
